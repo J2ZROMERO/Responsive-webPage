@@ -16,6 +16,12 @@
     min-width: 540px;
 }
 
+body {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
 .menu_mobil
 {
     width: 8%;
@@ -134,12 +140,12 @@ margin-top: 31px;
     height: 107px;
 
 }
-.ul_users{
+/* .ul_users{
 list-style: none;
 padding: 0;
 width: 100%;
 margin-top: 5%;
-}
+} */
 
 
 .img_program{
