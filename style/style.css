@@ -1,0 +1,376 @@
+
+                            @import url('http://fonts.cdnfonts.com/css/cocogoose');
+
+
+                            @import url('http://fonts.cdnfonts.com/css/lato');
+
+.header_nav {
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    box-shadow: 0px -14px 21px 1px black;
+    
+}
+.icons_Media{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    background-color: #272a31;
+    margin: 0;
+    height: 37px;
+    gap: 1.5%;
+}                
+
+.navT{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 7vh;
+    background-color: white;
+    
+    
+ }
+
+
+ .headWord{
+    color: white;
+    font-size: .6em;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+ }
+ .padd{
+    width: 10.8%;
+    height: 100%;
+ }
+ .about_link{
+    color: #ff4f38;
+ }
+ .nav_page{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+ }
+
+ .invitation {
+    box-shadow: 0px 0px 0px 4px #ff4f38;
+    width: 108px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e74a39;
+    font-family: 'Lato', sans-serif;
+ }
+
+ .navTitle h2{
+    font-family: 'Lato', sans-serif;
+    font-size: .8em;
+    cursor: pointer;
+    margin: 0;
+ }
+.container_lanpage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/backgroundDsk.png);
+    background-repeat: no-repeat;
+    background-size: 123%;
+    padding: 0;
+    margin-top: 96.8px;
+    width: 100%;
+}
+
+body {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+
+.wave {
+    color:  #ff4f38;
+    width: 470px;
+    margin-top: 1%;
+    font-family: 'Lato', sans-serif;
+                                      font-size: 1.8em;          
+
+} 
+
+
+.subtitle{
+    font-weight: 900;
+    font-size: 2.5em;    
+    color:rgba(229,33,11,0.8) ;
+width: 470px;   
+font-family: 'COCOGOOSE', sans-serif;
+}
+ .description {
+    width: 470px;
+    border: 5px solid #fff;
+    box-sizing: border-box;
+    padding: .882em;
+    background-color: #f7f7f8;
+    margin-top: 4%;
+    font-family: 'Lato', sans-serif;
+    margin: 17px 0 0 0px;
+ }
+ .date {
+    font-family: revert;
+    width: 470px;
+    font-weight: 900;
+    font-size: 1.9em;
+    color: #4a4a4a;
+    margin-bottom: 2%;
+    font-family: 'COCOGOOSE', sans-serif;
+    margin: 9px 0 0 0;
+
+ }
+ .assotiation {
+    width: 470px;
+    padding: 0 12 0 12;
+    color: #615e5e;
+    font-family: 'Lato', sans-serif;
+font-size: 1em;
+ }
+
+
+ 
+ .container_main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 11%;
+    background-image: url(../img/pattern_mob.png);
+    background-color: #000000d6;
+    height: 466px;
+    width: 100%;
+}
+
+.content_Descr{
+    width: 62%;
+    margin-top: 7%
+}
+.title_main{
+    
+    color: white;
+    font-size: 1.5em;
+    margin: 0;
+    margin-top: 3%;
+}
+
+.line_content_mp{
+    stroke: #ec5242;
+    stroke-width: 4px;
+    height: 7px;
+    width: 48px;
+    margin-top: 2%;
+}
+
+.main_list{
+    
+    list-style: none;
+    padding: 0;
+    margin-top: 31px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main_li {
+    display: flex;
+    height: 211px;
+    background-color: rgb(55 58 67 / 63%);
+    width: 16%;
+    justify-content: center;
+    
+    margin-top: 2%;
+    margin-left: .4%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.button_join{
+    color: #808088;
+    border: 0;
+    width: 71%;
+    height: 9%;
+    font-size: 1.30em;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    margin-top: 2%;
+}
+
+/*  */
+
+.user{
+    width: 107px;
+    height: 107px;
+
+}
+/* .ul_users{
+list-style: none;
+padding: 0;
+width: 100%;
+margin-top: 5%;
+} */
+
+
+.img_program{
+    width: 50px;
+    height: 50px;
+    margin-left: 2%;
+    background-color: white;
+    box-shadow: 5px 10px #888888;
+}
+.name_program{
+    /* max-width: 52%; */
+    width: 80%;
+    height: 11%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff4f38;
+    font-size: 1.5em;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+                                                
+    
+}
+
+
+.p_program{
+    width: 80%;
+    width: 86%;
+    height: 59px;
+    color: white;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: .8em;
+    text-align: center;
+}
+
+
+
+
+
+
+ 
+
+ 
+ .close_button {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 30%;
+    margin-bottom: 1%;
+ }
+ .closeB {
+    width: 10%;
+    margin-right: 23px;
+    margin-top: 0px;
+    cursor: pointer;
+ }
+ .link_page {
+    text-decoration: none;
+ }
+
+
+ .logo_mob{
+    width: 155px;
+    box-shadow: 1px -7px 0px -2px #ff4f38;
+    margin-bottom: 5%;
+ }
+
+ 
+
+
+
+
+ .partners{
+    min-width: 100%;
+    height: 377px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.partner{
+    text-align: center;
+    color: #8d8d8d;
+    margin-bottom: 3%;
+    
+}
+
+.ul_partner {
+    list-style: none;
+    display: flex;
+    flex-wrap: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 212px;
+    background-color: #414246;
+    padding: 0;
+}
+
+.partnersImg{
+    width: 73%;
+}
+.namesP{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.partnersli{
+    max-width: 16%;
+    max-height: 25%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+}
+
+.botton_logo{
+    width: 32%;
+    height: 100%;
+    text-align: center;
+}
+
+.couser{ 
+    width: 50%;
+}
+.footerB{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    max-height: 24%;
+    margin-bottom: 1%;
+    justify-content: center;
+}
+.course_botton{
+    width: 79%;
+}
+@media (min-width: md) and (max-width: xl) { 
+
+
+    
+    
+}
