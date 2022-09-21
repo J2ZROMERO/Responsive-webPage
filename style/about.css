@@ -30,6 +30,7 @@ align-items: center;
     align-self: flex-start;
     margin-left: 5%;
     margin-top: 5%;
+    cursor: pointer;
 }
 
 .wave {
@@ -128,10 +129,13 @@ align-items: center;
     height: 325px;
 }
 .course {
-    width: 50%;
+    width: 100%;
     
 }
-
+.courseMP {
+    width: 65%;
+    
+}
 .quickView{
     font-family: 'Lato', sans-serif;
     color: #797171;
@@ -261,4 +265,58 @@ font-family: 'Lato', sans-serif;
     margin-top: 4%;
     text-align: center;
     line-height: 1.6em;
+ }
+
+ .navT{
+    width: 50vh;
+    height: 100vh;
+    
+ }
+
+ .nav_page{
+    list-style: none;
+    padding: 0;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    display: flex;
+    gap: 5%;
+    margin-left: 3%;
+    cursor: pointer;
+ }
+
+ .navTitle h2{
+    font-family: 'COCOGOOSE', sans-serif;
+    color: black;
+    font-size: 3em;
+    width: 95%;
+    box-shadow: 12px 7px 16px -2px #fc573b;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+ }
+ .close_button {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;  
+ }
+ .closeB {
+    width: 10%;
+    margin-right: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+ }
+ .link_page {
+    text-decoration: none;
+ }
+ .navT{
+    display: none;
+ }
+ .logo_mob{
+    width: 50%;
+    box-shadow: 1px 1px 1px 1px #ffe6e2;
+ }
+ .botton_logo{
+    width: 50%;
  }
