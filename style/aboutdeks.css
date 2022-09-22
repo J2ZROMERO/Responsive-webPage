@@ -9,7 +9,7 @@
              }   
 
              
-.header_nav {
+.header_navDA {
     
     width: 100%;
     display: flex;
@@ -20,7 +20,7 @@
     box-shadow: 0px -14px 21px 1px black;
     
 }
-.icons_Media{
+.icons_MediaDA{
     list-style: none;
     padding: 0;
     display: flex;
@@ -32,7 +32,7 @@
     height: 37px;
     gap: 1.5%;
 }            
-.close_button {
+.close_buttonDA {
     
     display: flex;
     justify-content: space-between;
@@ -42,13 +42,13 @@
  }    
 
  
- .logo_mob{
+ .logo_mobDA{
     width: 155px;
     box-shadow: 1px -7px 0px -2px #ff4f38;
     margin-bottom: 5%;
  }
 
-.navTop{
+.navTopDA{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -59,20 +59,20 @@
  }
 
 
- .headWord{
+ .headWordDA{
     color: white;
     font-size: .6em;
     margin: 0;
     font-family: 'Lato', sans-serif;
  }
- .padd{
+ .paddDA{
     width: 10.8%;
     height: 100%;
  }
- .about_link{
+ .about_linkDA{
     color: #ff4f38;
  }
- .nav_page{
+ .nav_pageDA{
     list-style: none;
     padding: 0;
     display: flex;
@@ -83,7 +83,7 @@
     margin: 0;
  }
 
- .invitation {
+ .invitationDA {
     box-shadow: 0px 0px 0px 4px #ff4f38;
     width: 108px;
     height: 30px;
@@ -94,13 +94,13 @@
     font-family: 'Lato', sans-serif;
  }
 
- .navTitle h2{
+ .navTitleDA h2{
     font-family: 'Lato', sans-serif;
     font-size: .8em;
     cursor: pointer;
     margin: 0;
  }
-.container_lanpage{
+.container_lanpageDA{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -121,7 +121,7 @@ align-items: center;
 
 
 
-.subtitle{
+.subtitleDA{
     font-weight: 900;
     font-size: 2.2em;
     color: rgba(229,33,11,0.8);
@@ -130,7 +130,7 @@ align-items: center;
     text-align: center;
     margin-top: 2%;
 }
- .description {
+ .descriptionDA {
     width: 68%;
     height: 213px;
     border: 3px solid #f8f8f8;
@@ -144,7 +144,7 @@ align-items: center;
     line-height: 1.7em;
  }
 
- .assotiation {
+ .assotiationDA {
     width: 470px;
     padding: 0 12 0 12;
     color: #615e5e;
@@ -155,17 +155,17 @@ align-items: center;
     text-align: center;
     line-height: 1.6em;
  }
-.invitation_link{
+.invitation_linkDA{
     color: #ec5242;
 }
 
-.invitation_link:hover{
+.invitation_linkDA:hover{
     color: #bc3c2e;
 }
  /*  */
 
 
- .container_main{
+ .container_mainDA{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -177,14 +177,14 @@ align-items: center;
 }
 
 
-.title_main{
+.title_mainDA{
     margin-top: 7%;
     color: black;
     font-size: 1.5em;
     text-align: center;
 }
 
-.line_content_mp{
+.line_content_mpDA{
     stroke: #ec5242;
     stroke-width: 4px;
     height: 7px;
@@ -192,12 +192,12 @@ align-items: center;
     
 }
 
-.partner{
+.partnerDA{
     text-align: center;
     color: white;
     font-family: 'Lato', sans-serif;
 }
-.legend {
+.legendDA {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -207,22 +207,22 @@ align-items: center;
     margin-top: 4%;
     height: 325px;
 }
-.course {
+.courseDA {
     width: 56%;
     
 }
-.courseMP {
+.courseMPDA {
     width: 65%;
     
 }
-.quickView{
+.quickViewDA{
     font-family: 'Lato', sans-serif;
     color: #797171;
     text-align: center;
     margin-top: 2%;
     width: 124%;
 }
-.previous_course{
+.previous_courseDA{
     display: flex;
     flex-direction: column;
     width: 540px;
@@ -234,14 +234,14 @@ align-items: center;
 
 }
 
-.descriptionView{ 
+.descriptionViewDA{ 
 width: 85%;
 text-align: center;
 font-family: 'Lato', sans-serif;
     color: #797171;
     margin: 1% 0 8% 0;
 }
-.courses{
+.coursesDA{
     font-family: 'Lato', sans-serif;
     color: #797171;
     text-align: center;
@@ -252,7 +252,7 @@ font-family: 'Lato', sans-serif;
     height: 533px;
 }
 
-.li_meet{
+.li_meetDA{
     text-align: center;
     
     display: flex;
@@ -261,20 +261,20 @@ font-family: 'Lato', sans-serif;
     height: 44%;
 }
 
-.li_meet:hover .textHover{
+.li_meetDA:hover .textHoverDA{
     opacity: 0;
   
 
 }
 
-.meet{
+.meetDA{
     width: 80%;
     text-align: center;
     
     
 }
 
-.textHover{
+.textHoverDA{
     position: absolute;
     width: 312px;
     height: 235px;
@@ -292,7 +292,7 @@ font-family: 'Lato', sans-serif;
 
 
 }
-.title_image{
+.title_imageDA{
     position: absolute;
     top: 0;
     left: 0;
@@ -309,7 +309,7 @@ font-family: 'Lato', sans-serif;
     margin-left: 10%;
 }
 
-.title_image  {
+.title_imageDA  {
     transform: translateY(0);
 }
 
@@ -317,17 +317,17 @@ font-family: 'Lato', sans-serif;
     backdrop-filter: blur(1px);
 }
 
-.title_image:hover {
+.title_imageDA:hover {
     
     transform: translateY(20px);
     transition: transform 0.25s ;
 }
 
-.title_image:hover{
+.title_imageDA:hover{
     opacity: 0;
 }
 
-.partners{
+.partnersDA{
     min-width: 100%;
     height: 179px;
     display: flex;
@@ -336,7 +336,7 @@ font-family: 'Lato', sans-serif;
     flex-wrap: wrap;
     background-color: #2e2e2e;
 }
-.ul_partner {
+.ul_partnerDA {
     list-style: none;
     display: flex;
     flex-wrap: 0;
@@ -347,18 +347,18 @@ font-family: 'Lato', sans-serif;
     padding: 0;
 }
 
-.partnersImg{
+.partnersImgDA{
     width: 73%;
 }
 
-.namesP{
+.namesPDA{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
 
-.partnersli{
+.partnersliDA{
     max-width: 33%;
     max-height: 25%;
     margin: 0;
@@ -368,7 +368,7 @@ font-family: 'Lato', sans-serif;
     align-items: center;;
 }
 
-.assotiation_bottom {
+.assotiation_bottomDA {
     width: 46%;
     padding: 0 12 0 12;
     color: #615e5e;
@@ -386,12 +386,12 @@ font-family: 'Lato', sans-serif;
 
 
 
- .link_page {
+ .link_pageDA {
     text-decoration: none;
  }
 
 
- .botton_logo{
+ .botton_logoDA{
     width: 36%;
     text-align: end;
     margin-right: 1%;

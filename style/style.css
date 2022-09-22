@@ -4,7 +4,7 @@
 
                             @import url('http://fonts.cdnfonts.com/css/lato');
 
-.header_nav {
+.header_navD {
     
     width: 100%;
     display: flex;
@@ -15,7 +15,7 @@
     box-shadow: 0px -14px 21px 1px black;
     
 }
-.icons_Media{
+.icons_MediaD{
     list-style: none;
     padding: 0;
     display: flex;
@@ -28,7 +28,7 @@
     gap: 1.5%;
 }                
 
-.navT{
+.navTD{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -39,20 +39,20 @@
  }
 
 
- .headWord{
+ .headWordD{
     color: white;
     font-size: .6em;
     margin: 0;
     font-family: 'Lato', sans-serif;
  }
- .padd{
+ .paddD{
     width: 10.8%;
     height: 100%;
  }
- .about_link{
+ .about_linkD{
     color: #ff4f38;
  }
- .nav_page{
+ .nav_pageD{
     list-style: none;
     padding: 0;
     display: flex;
@@ -63,7 +63,7 @@
     margin: 0;
  }
 
- .invitation {
+ .invitationD {
     box-shadow: 0px 0px 0px 4px #ff4f38;
     width: 108px;
     height: 30px;
@@ -74,13 +74,13 @@
     font-family: 'Lato', sans-serif;
  }
 
- .navTitle h2{
+ .navTitleD h2{
     font-family: 'Lato', sans-serif;
     font-size: .8em;
     cursor: pointer;
     margin: 0;
  }
-.container_lanpage{
+.container_lanpageD{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -99,7 +99,7 @@ align-items: center;
 }
 
 
-.wave {
+.waveD {
     color:  #ff4f38;
     width: 470px;
     margin-top: 1%;
@@ -109,14 +109,14 @@ align-items: center;
 } 
 
 
-.subtitle{
+.subtitleD{
     font-weight: 900;
     font-size: 2.5em;    
     color:rgba(229,33,11,0.8) ;
 width: 470px;   
 font-family: 'COCOGOOSE', sans-serif;
 }
- .description {
+ .descriptionD {
     width: 470px;
     border: 5px solid #fff;
     box-sizing: border-box;
@@ -126,7 +126,7 @@ font-family: 'COCOGOOSE', sans-serif;
     font-family: 'Lato', sans-serif;
     margin: 17px 0 0 0px;
  }
- .date {
+ .dateD {
     font-family: revert;
     width: 470px;
     font-weight: 900;
@@ -137,7 +137,7 @@ font-family: 'COCOGOOSE', sans-serif;
     margin: 9px 0 0 0;
 
  }
- .assotiation {
+ .assotiationD {
     width: 470px;
     padding: 0 12 0 12;
     color: #615e5e;
@@ -147,7 +147,7 @@ font-size: 1em;
 
 
  
- .container_main{
+ .container_mainD{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -158,11 +158,11 @@ font-size: 1em;
     width: 100%;
 }
 
-.content_Descr{
+.content_DescrD{
     width: 62%;
     margin-top: 7%
 }
-.title_main{
+.title_mainD{
     
     color: white;
     font-size: 1.5em;
@@ -170,7 +170,7 @@ font-size: 1em;
     margin-top: 3%;
 }
 
-.line_content_mp{
+.line_content_mpD{
     stroke: #ec5242;
     stroke-width: 4px;
     height: 7px;
@@ -178,7 +178,7 @@ font-size: 1em;
     margin-top: 2%;
 }
 
-.main_list{
+.main_listD{
     
     list-style: none;
     padding: 0;
@@ -189,7 +189,7 @@ font-size: 1em;
 }
 
 
-.main_li {
+.main_liD {
     display: flex;
     height: 211px;
     background-color: rgb(55 58 67 / 63%);
@@ -203,7 +203,7 @@ font-size: 1em;
     align-items: center;
 }
 
-.button_join{
+.button_joinD{
     color: #808088;
     border: 0;
     width: 71%;
@@ -216,7 +216,7 @@ font-size: 1em;
 
 /*  */
 
-.user{
+.userD{
     width: 107px;
     height: 107px;
 
@@ -229,14 +229,14 @@ margin-top: 5%;
 } */
 
 
-.img_program{
+.img_programD{
     width: 50px;
     height: 50px;
     margin-left: 2%;
     background-color: white;
     box-shadow: 5px 10px #888888;
 }
-.name_program{
+.name_programD{
     /* max-width: 52%; */
     width: 80%;
     height: 11%;
@@ -252,7 +252,7 @@ margin-top: 5%;
 }
 
 
-.p_program{
+.p_programD{
     width: 80%;
     width: 86%;
     height: 59px;
@@ -271,7 +271,7 @@ margin-top: 5%;
  
 
  
- .close_button {
+ .close_buttonD {
     
     display: flex;
     justify-content: space-between;
@@ -279,18 +279,18 @@ margin-top: 5%;
     width: 30%;
     margin-bottom: 1%;
  }
- .closeB {
+ .closeBD {
     width: 10%;
     margin-right: 23px;
     margin-top: 0px;
     cursor: pointer;
  }
- .link_page {
+ .link_pageD {
     text-decoration: none;
  }
 
 
- .logo_mob{
+ .logo_mobD{
     width: 155px;
     box-shadow: 1px -7px 0px -2px #ff4f38;
     margin-bottom: 5%;
@@ -301,7 +301,7 @@ margin-top: 5%;
 
 
 
- .partners{
+ .partnersD{
     min-width: 100%;
     height: 377px;
     display: flex;
@@ -310,14 +310,14 @@ margin-top: 5%;
     flex-wrap: wrap;
 }
 
-.partner{
+.partnerD{
     text-align: center;
     color: #8d8d8d;
     margin-bottom: 3%;
     
 }
 
-.ul_partner {
+.ul_partnerD {
     list-style: none;
     display: flex;
     flex-wrap: 0;
@@ -328,18 +328,18 @@ margin-top: 5%;
     padding: 0;
 }
 
-.partnersImg{
+.partnersImgD{
     width: 73%;
     margin-bottom: 25%;
 }
-.namesP{
+.namesPD{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
 
-.partnersli{
+.partnersliD{
     max-width: 16%;
     max-height: 25%;
     margin: 0;
@@ -349,16 +349,16 @@ margin-top: 5%;
     align-items: center;;
 }
 
-.botton_logo{
+.botton_logoD{
     width: 32%;
     height: 100%;
     text-align: center;
 }
 
-.couser{ 
+.couserD{ 
     width: 50%;
 }
-.footerB{
+.footerBD{
     display: flex;
     width: 100%;
     align-items: center;
@@ -366,7 +366,7 @@ margin-top: 5%;
     margin-bottom: 1%;
     justify-content: center;
 }
-.course_botton{
+.course_bottonD{
     width: 79%;
 }
 @media (min-width: md) and (max-width: xl) { 

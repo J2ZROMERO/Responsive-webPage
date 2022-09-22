@@ -49,7 +49,7 @@ function setAttributes(element, attributes) {
 
 
     const section = document.createElement('section');
-        section.className = 'container-sm section_colab';
+        section.className = 'container-sm section_colabD';
         css(section, {
           display: 'flex',
           'flex-direction': 'column',
@@ -61,59 +61,59 @@ function setAttributes(element, attributes) {
 
 section.innerHTML = `
 <h2>Featured Speackers</h2>
-<svg class="line_content_colab" >
-    <line class="line_colab" x1="0" y1="0" x2="30" y2="0"  />
+<svg class="line_content_colabD" >
+    <line class="line_colabD" x1="0" y1="0" x2="30" y2="0"  />
   </svg>
 
-<ul class="ul_users">
-    <li class="col_user">
-        <div class="collaborators"> 
-            <img  alt="" class="user">
+<ul class="ul_usersD">
+    <li class="col_userD">
+        <div class="collaboratorsD"> 
+            <img  alt="" class="userD">
         </div> 
-        <div class="about_col"> 
-             <h2 class="col_name">Richard Half</h2>
-             <h3 class="desc_col">Software Enginner Teacher at Hardvard University</h3>
-             <svg class="line_content" >
-                <line class="line" x1="0" y1="0" x2="30" y2="0"  />
+        <div class="about_colD"> 
+             <h2 class="col_nameD">Richard Half</h2>
+             <h3 class="desc_colD">Software Enginner Teacher at Hardvard University</h3>
+             <svg class="line_contentD" >
+                <line class="lineD" x1="0" y1="0" x2="30" y2="0"  />
               </svg>
-             <p class="brief_col">Expert  to  teach Paradigms  of programming.</p>
+             <p class="brief_colD">Expert  to  teach Paradigms  of programming.</p>
             </div>
         </li>
-    <li class="col_user">
-        <div class="collaborators">
-            <img src="../img/face2.jpg " alt="" class="user">
+    <li class="col_userD">
+        <div class="collaboratorsD">
+            <img src="../img/face2.jpg " alt="" class="userD">
         </div> 
-        <div class="about_col">
-            <h2 class="col_name">Sopfia Robinson</h2>
-            <h3 class="desc_col">Software Enginner At Google</h3>
-            <svg class="line_content" >
-                <line class="line" x1="0" y1="0" x2="40" y2="0"  />
+        <div class="about_colD">
+            <h2 class="col_nameD">Sopfia Robinson</h2>
+            <h3 class="desc_colD">Software Enginner At Google</h3>
+            <svg class="line_contentD" >
+                <line class="lineD" x1="0" y1="0" x2="40" y2="0"  />
               </svg>
-            <p class="brief_col">Professional on backend at google.</p> </div></li>
-    <li class="col_user"><div class="collaborators"><img src="../img/face3.jpg " alt="" class="user"></div> <div class="about_col"><h2 class="col_name">Albert Cons</h2><h3 class="desc_col">UX desing at Google</h3><svg class="line_content" >
-        <line class="line" x1="0" y1="0" x2="30" y2="0"  />
-      </svg><p class="brief_col">Expert creating UX design for user, 3 times named: The best UX designer at Google</p> </div></li>
-    <li class="col_user"><div class="collaborators"><img src="../img/face4.jpg" alt="" class="user"></div> <div class="about_col"><h2 class="col_name">Neymar Royar</h2><h3 class="desc_col">Computer System Enginer </h3><svg class="line_content" >
-        <line class="line" x1="0" y1="0" x2="30" y2="0"  />
-      </svg><p class="brief_col">Full stack programmer</p> </div></li>
-    <li class="col_user"><div class="collaborators"><img src="../img/face5.jpg" alt="" class="user"></div> <div class="about_col"><h2 class="col_name">Luci Caprilla</h2><h3 class="desc_col">Especialist on Digital Marketing</h3><svg class="line_content" >
-        <line class="line" x1="0" y1="0" x2="30" y2="0"  />
-      </svg><p class="brief_col">Professional to catch new potential clients</p> </div>
+            <p class="brief_colD">Professional on backend at google.</p> </div></li>
+    <li class="col_userD"><div class="collaboratorsD"><img src="../img/face3.jpg " alt="" class="userD"></div> <div class="about_colD"><h2 class="col_nameD">Albert Cons</h2><h3 class="desc_colD">UX desing at Google</h3><svg class="line_contentD" >
+        <line class="lineD" x1="0" y1="0" x2="30" y2="0"  />
+      </svg><p class="brief_colD">Expert creating UX design for user, 3 times named: The best UX designer at Google</p> </div></li>
+    <li class="col_userD"><div class="collaboratorsD"><img src="../img/face4.jpg" alt="" class="userD"></div> <div class="about_colD"><h2 class="col_nameD">Neymar Royar</h2><h3 class="desc_colD">Computer System Enginer </h3><svg class="line_contentD" >
+        <line class="lineD" x1="0" y1="0" x2="30" y2="0"  />
+      </svg><p class="brief_colD">Full stack programmer</p> </div></li>
+    <li class="col_userD"><div class="collaboratorsD"><img src="../img/face5.jpg" alt="" class="userD"></div> <div class="about_colD"><h2 class="col_nameD">Luci Caprilla</h2><h3 class="desc_colD">Especialist on Digital Marketing</h3><svg class="line_contentD" >
+        <line class="lineD" x1="0" y1="0" x2="30" y2="0"  />
+      </svg><p class="brief_colD">Professional to catch new potential clients</p> </div>
       </li>
-    <li class="col_user">  </li>
+    <li class="col_userD">  </li>
     </ul>`;
 
-    let containerM = document.querySelector('.container_main')
+    let containerM = document.querySelector('.container_mainD')
     containerM.insertAdjacentElement("afterend",section);
 
-    let lineCC = document.querySelector('.line_content_colab');
+    let lineCC = document.querySelector('.line_content_colabD');
     css(lineCC,{
       height: '8px',
         display: 'flex',
         width: '5%',
     })
 
-    let lineCCL = document.querySelector('.line_colab');
+    let lineCCL = document.querySelector('.line_colabD');
     css(lineCCL,{
       stroke: '#ff4f38',
       'stroke-width': '7px',
@@ -122,18 +122,18 @@ section.innerHTML = `
 
       
 
-    let liU = document.getElementsByClassName('col_user');
-    let collaborators = document.getElementsByClassName('collaborators');
-    let about_colab = document.getElementsByClassName ('about_col');
-    let name_colab = document.getElementsByClassName ('col_name');
-    let descr_col = document.getElementsByClassName ('desc_col');  
-    let lineContent = document.getElementsByClassName ('line_content');
-    let lineC = document.getElementsByClassName ('line');
-    let briefC = document.getElementsByClassName ('brief_col');
+    let liU = document.getElementsByClassName('col_userD');
+    let collaborators = document.getElementsByClassName('collaboratorsD');
+    let about_colab = document.getElementsByClassName ('about_colD');
+    let name_colab = document.getElementsByClassName ('col_nameD');
+    let descr_col = document.getElementsByClassName ('desc_colD');  
+    let lineContent = document.getElementsByClassName ('line_contentD');
+    let lineC = document.getElementsByClassName ('lineD');
+    let briefC = document.getElementsByClassName ('brief_colD');
     
 
 
-    let user = document.getElementsByClassName('user');
+    let user = document.getElementsByClassName('userD');
     let people = ['../img/face1.jpg','../img/face2.jpg','../img/face3.jpg','../img/face4.jpg','../img/face5.jpg'];
     
 
@@ -208,7 +208,7 @@ section.innerHTML = `
 
 
 
-    let ulUser = document.querySelector('.ul_users');
+    let ulUser = document.querySelector('.ul_usersD');
     css(ulUser,{
       'list-style': 'none',
       padding: '0',
@@ -222,8 +222,8 @@ section.innerHTML = `
     })
   }
 
-  let partners  = document.querySelector('.partners');
-  let con = document.querySelector('.section_colab');
+  let partners  = document.querySelector('.partnersD');
+  let con = document.querySelector('.section_colabD');
   
   
   
