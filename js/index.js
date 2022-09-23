@@ -280,7 +280,10 @@ function elementsD() {
   <li class="col_userD"><div class="collaboratorsD"><img src="../img/face5.jpg" alt="" class="userD"></div> <div class="about_colD"><h2 class="col_nameD">Luci Caprilla</h2><h3 class="desc_colD">Especialist on Digital Marketing</h3><svg class="line_contentD" >
       <line class="lineD" x1="0" y1="0" x2="30" y2="0"  />
     </svg><p class="brief_colD">Professional to catch new potential clients</p> </div>
-    </li>
+    </li><li class="col_userD"><div class="collaboratorsD"><img src="../img/face4.jpg" alt="" class="userD"></div> <div class="about_colD"><h2 class="col_nameD">Luci Caprilla</h2><h3 class="desc_colD">Especialist on Digital Marketing</h3><svg class="line_contentD" >
+    <line class="lineD" x1="0" y1="0" x2="30" y2="0"  />
+  </svg><p class="brief_colD">Professional to catch new potential clients</p> </div>
+  </li>
   <li class="col_userD">  </li>
   </ul>`;
 
@@ -310,7 +313,7 @@ function elementsD() {
   const briefC = document.getElementsByClassName('brief_colD');
 
   const user = document.getElementsByClassName('userD');
-  const people = ['../img/face1.jpg', '../img/face2.jpg', '../img/face3.jpg', '../img/face4.jpg', '../img/face5.jpg'];
+  const people = ['../img/face1.jpg', '../img/face2.jpg', '../img/face3.jpg', '../img/face4.jpg', '../img/face5.jpg', '../img/face5.jpg'];
 
   for (let i = 0; i < liU.length - 1; i += 1) {
     css(liU[i], {

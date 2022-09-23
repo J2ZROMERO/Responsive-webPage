@@ -6,6 +6,12 @@
   font-family: 'Lato', sans-serif;
 }
 
+.header_navDA,
+.container_lanpageDA,
+.partnersDA {
+  display: none;
+}
+
 .container_lanpage {
   display: flex;
   flex-direction: column;
@@ -325,4 +331,373 @@ body {
 
 .botton_logo {
   width: 50%;
+}
+
+
+/* start desktop version */
+@media only screen and (min-width: 768px) {
+  .navT,
+  .container_lanpage {
+    display: none;
+  }
+
+  .header_navDA {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    box-shadow: 0 -14px 21px 1px black;
+    animation-duration: 1s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  .icons_MediaDA {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    background-color: #272a31;
+    margin: 0;
+    height: 37px;
+    gap: 1.5%;
+  }
+
+  .close_buttonDA {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 30%;
+  }
+
+  .logo_mobDA {
+    width: 155px;
+    box-shadow: -11px 5px 0 -2px #ff4f38;
+  }
+
+  .navTopDA {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 7vh;
+    background-color: white;
+  }
+
+  .headWordDA {
+    color: white;
+    font-size: 0.6em;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .paddDA {
+    width: 10.8%;
+    height: 100%;
+  }
+
+  .about_linkDA {
+    color: #ff4f38;
+  }
+
+  .nav_pageDA {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+  }
+
+  .invitationDA {
+    box-shadow: 0 0 0 4px #ff4f38;
+    width: 108px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e74a39;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .navTitleDA h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.8em;
+    cursor: pointer;
+    margin: 0;
+  }
+
+  .container_lanpageDA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/about_bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 0;
+    min-width: 540px;
+    margin-top: 11%;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subtitleDA {
+    font-weight: 900;
+    font-size: 2.2em;
+    width: 470px;
+    font-family: 'COCOGOOSE', sans-serif;
+    text-align: center;
+    margin-top: 2%;
+    background-image: url('../img/fondo_text.jpg');
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .descriptionDA {
+    width: 68%;
+    height: 213px;
+    border: 3px solid #f8f8f8;
+    box-sizing: border-box;
+    padding: 0.882em;
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+    margin: 41px 0 0 0;
+    text-align: center;
+    line-height: 1.7em;
+  }
+
+  .assotiationDA {
+    width: 470px;
+    padding: 0 12 0 12;
+    color: #615e5e;
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    height: 85px;
+    margin-top: 4%;
+    text-align: center;
+    line-height: 1.6em;
+  }
+
+  .invitation_linkDA {
+    color: #ec5242;
+  }
+
+  .invitation_linkDA:hover {
+    color: #bc3c2e;
+  }
+
+  .container_mainDA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 17%;
+    background-image: url(../img/pattern_mob.png);
+    background-color: #000000d6;
+    height: 814px;
+  }
+
+  .title_mainDA {
+    margin-top: 7%;
+    color: black;
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .line_content_mpDA {
+    stroke: #ec5242;
+    stroke-width: 4px;
+    height: 7px;
+    width: 48px;
+  }
+
+  .partnerDA {
+    text-align: center;
+    color: white;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .legendDA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    width: 450px;
+    border-top: 2px solid #d3d3d3;
+    margin-top: 4%;
+    height: 325px;
+  }
+
+  .courseDA {
+    width: 56%;
+  }
+
+  .courseMPDA {
+    width: 65%;
+  }
+
+  .quickViewDA {
+    font-family: 'Lato', sans-serif;
+    color: #797171;
+    text-align: center;
+    margin-top: 2%;
+    width: 124%;
+  }
+
+  .previous_courseDA {
+    display: flex;
+    flex-direction: column;
+    width: 540px;
+    border-top: 1px solid lightgrey;
+    align-items: center;
+    margin-top: 3%;
+  }
+
+  .descriptionViewDA {
+    width: 85%;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: #797171;
+    margin: 1% 0 8% 0;
+  }
+
+  .coursesDA {
+    font-family: 'Lato', sans-serif;
+    color: #797171;
+    text-align: center;
+    margin-top: 2%;
+    width: 150%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 533px;
+  }
+
+  .li_meetDA {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 44%;
+  }
+
+  .meetDA {
+    width: 80%;
+    text-align: center;
+  }
+
+  .textHoverDA {
+    position: absolute;
+    width: 312px;
+    height: 235px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: #bc3c2e;
+    opacity: 0.5;
+    font-size: 4em;
+    color: white;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+
+  .title_imageDA {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    background: rgb(238, 82, 60, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 0.25s;
+    color: white;
+    margin-left: 10%;
+  }
+
+  .partnersDA {
+    min-width: 100%;
+    height: 179px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #2e2e2e;
+  }
+
+  .ul_partnerDA {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 299px;
+    background-color: #414246;
+    padding: 0;
+  }
+
+  .partnersImgDA {
+    width: 73%;
+  }
+
+  .namesPDA {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .partnersliDA {
+    max-width: 33%;
+    max-height: 25%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .assotiation_bottomDA {
+    width: 46%;
+    padding: 0 12 0 12;
+    color: #615e5e;
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    height: 85px;
+    line-height: 1.6em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 4%;
+  }
+
+  .link_pageDA {
+    text-decoration: none;
+  }
+
+  .botton_logoDA {
+    width: 36%;
+    text-align: end;
+    margin-right: 1%;
+  }
 }
