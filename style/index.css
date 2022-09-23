@@ -348,16 +348,16 @@ body {
 
   .waveD {
     color: #ff4f38;
-    width: 470px;
+    width: 467px;
     margin-top: 1%;
     font-family: 'Lato', sans-serif;
-    font-size: 1.8em;
+    font-size: 2.8em;
   }
 
   .subtitleD {
     font-weight: 900;
-    font-size: 2.5em;
-    width: 470px;
+    font-size: 3.5em;
+    width: 701px;
     font-family: 'COCOGOOSE', sans-serif;
     background-image: url('../img/fondo_text.jpg');
     background-clip: text;
@@ -366,7 +366,7 @@ body {
   }
 
   .descriptionD {
-    width: 470px;
+    width: 718px;
     border: 5px solid #fff;
     box-sizing: border-box;
     padding: 0.882em;
@@ -381,7 +381,7 @@ body {
     font-size: 1.9em;
     color: #4a4a4a;
     font-family: 'COCOGOOSE', sans-serif;
-    margin: 9px 0 0 0;
+    margin: 36px 0 0 0;
   }
 
   .assotiationD {
@@ -396,7 +396,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 11%;
+    margin-top: 10%;
     background-image: url(../img/pattern_mob.png);
     background-color: #000000d6;
     height: 466px;
@@ -406,11 +406,12 @@ body {
   .content_DescrD {
     width: 62%;
     margin-top: 7%;
+    margin-right: 13%;
   }
 
   .title_mainD {
     color: white;
-    font-size: 1.5em;
+    font-size: 1.5em; 
     margin: 0;
     margin-top: 3%;
   }
@@ -426,7 +427,6 @@ body {
   .main_listD {
     list-style: none;
     padding: 0;
-    margin-top: 31px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -434,9 +434,9 @@ body {
 
   .main_liD {
     display: flex;
-    height: 211px;
-    background-color: rgb(55 58 67 / 63%);
-    width: 16%;
+    height: 206px;
+    background-color: rgb(60 63 70 / 76%);
+    width: 14%;
     justify-content: center;
     margin-top: 2%;
     margin-left: 0.4%;
@@ -445,8 +445,13 @@ body {
     align-items: center;
   }
 
+  .main_liD:hover {
+border: 4px solid white;
+  }
+
+
   .button_joinD {
-    color: #808088;
+    color: white;
     border: 0;
     width: 71%;
     height: 9%;
@@ -590,6 +595,7 @@ body {
     width: 53%;
     font-size: 1em;
     font-family: 'Lato', sans-serif;
+    margin-right: 6%;
   }
 }
 

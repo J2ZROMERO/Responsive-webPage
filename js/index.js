@@ -1,66 +1,48 @@
 // functions styles and properties
+const resizeob = new ResizeObserver((entries) => {
+  const rect = entries[0].contentRect;
 
+  const clp = document.querySelector('.container_lanpage');
+  const gcs = window.getComputedStyle(clp);
+  const clpD = document.querySelector('.container_lanpageD');
+  const gcsD = window.getComputedStyle(clpD);
+
+  if (gcs.display === 'none') {
+    if (rect.width >= 768) {
+      document.querySelector('.section_colab').style.display = 'none';
+    }
+  }
+
+  if (gcsD.display === 'none') {
+    if (rect.width <= 768) {
+      document.querySelector('.section_colab').style.display = 'flex';
+    }
+  }
+});
 function setAttributes(element, attributes) {
-    Object.keys(attributes).forEach((attr) => {
-      element.setAttribute(attr, attributes[attr]);
-    });
-  }
-  
-  function css(variable, style) {
-    Object.keys(style).forEach((attr) => {
-      variable.style[attr] = style[attr];
-    });
-  }
-  
-  // buttons hover and mouseout
-  function bottonEventOutA(event) {
-    event.addEventListener('mouseout', () => {
-      event.style.backgroundColor = '#36B37F';
-  
-      event.style.cursor = 'pointer';
-    });
-  }
-  
-  function bottonEventA(event) {
-    event.addEventListener('mouseover', () => {
-      event.style.backgroundColor = 'green';
-  
-      event.style.cursor = 'pointer';
-    });
-  }
-  
-  function bottonEventOut(event) {
-    event.addEventListener('mouseout', () => {
-      event.style.backgroundColor = 'rgb(238, 248, 243)';
-  
-      event.style.cursor = 'pointer';
-    });
-  }
-  function bottonEvent(event) {
-    event.addEventListener('mouseover', () => {
-      event.style.backgroundColor = '#ebeff4';
-  
-      event.style.cursor = 'pointer';
-    });
-  }
+  Object.keys(attributes).forEach((attr) => {
+    element.setAttribute(attr, attributes[attr]);
+  });
+}
 
-window.addEventListener('load',elements);
+function css(variable, style) {
+  Object.keys(style).forEach((attr) => {
+    variable.style[attr] = style[attr];
+  });
+}
 
-  function elements (){
+function elements() {
+  const section = document.createElement('section');
+  section.className = 'container-sm section_colab';
+  css(section, {
+    display: 'flex',
+    'flex-direction': 'column',
+    'align-items': 'center',
+    'justify-content': 'center',
+    'margin-top': '7%',
+  });
 
-
-    const section = document.createElement('section');
-        section.className = 'container-sm section_colab';
-        css(section, {
-          display: 'flex',
-          'flex-direction': 'column',
-          'align-items': 'center',
-          'justify-content': 'center',
-          'margin-top': '7%',
-          });
-          
-
-section.innerHTML = `
+  section.innerHTML = `
 <h2>Featured Speackers</h2>
 <svg class="line_content_colab" >
     <line class="line_colab" x1="0" y1="0" x2="30" y2="0"  />
@@ -103,269 +85,162 @@ section.innerHTML = `
     <li class="col_user"><button class="colab_button"> <span>More</span> <img class="arrow_bu" src="../img/arrow.png" alt=""></button></li>
     </ul>`;
 
-    document.body.appendChild(section);
+  document.body.appendChild(section);
 
-    let lineCC = document.querySelector('.line_content_colab');
-    css(lineCC,{
-      height: '8px',
-        display: 'flex',
-        width: '6%',
-    })
+  const lineCC = document.querySelector('.line_content_colab');
+  css(lineCC, {
+    height: '8px',
+    display: 'flex',
+    width: '6%',
+  });
 
-    let lineCCL = document.querySelector('.line_colab');
-    css(lineCCL,{
-      stroke: '#e7aea9',
-      'stroke-width': '7px',
-    })
+  const lineCCL = document.querySelector('.line_colab');
+  css(lineCCL, {
+    stroke: '#e7aea9',
+    'stroke-width': '7px',
+  });
 
+  const liU = document.getElementsByClassName('col_user');
+  const collaborators = document.getElementsByClassName('collaborators');
+  const aboutcolab = document.getElementsByClassName('about_col');
+  const namecolab = document.getElementsByClassName('col_name');
+  const descrcol = document.getElementsByClassName('desc_col');
+  const lineContent = document.getElementsByClassName('line_content');
+  const lineC = document.getElementsByClassName('line');
+  const briefC = document.getElementsByClassName('brief_col');
 
-      
+  const user = document.getElementsByClassName('user');
+  const people = ['../img/face1.jpg', '../img/face2.jpg', '../img/face3.jpg', '../img/face4.jpg', '../img/face5.jpg'];
 
-    let liU = document.getElementsByClassName('col_user');
-    let collaborators = document.getElementsByClassName('collaborators');
-    let about_colab = document.getElementsByClassName ('about_col');
-    let name_colab = document.getElementsByClassName ('col_name');
-    let descr_col = document.getElementsByClassName ('desc_col');  
-    let lineContent = document.getElementsByClassName ('line_content');
-    let lineC = document.getElementsByClassName ('line');
-    let briefC = document.getElementsByClassName ('brief_col');
-    
-
-
-    let user = document.getElementsByClassName('user');
-    let people = ['../img/face1.jpg','../img/face2.jpg','../img/face3.jpg','../img/face4.jpg','../img/face5.jpg'];
-    
-
-    for(let i = 0;i < liU.length -1;i+=1){
-      
-    
-      css(liU[i],{
-        display: 'flex',
+  for (let i = 0; i < liU.length - 1; i += 1) {
+    css(liU[i], {
+      display: 'flex',
       'justify-content': 'center',
       'margin-top': '39px',
-      })
-      css(collaborators[i],{
-        'max-width': '130px',
-        height: '130px',
-        'min-width': '130px',
-        'background-image': 'url(../img/chess.png)',
-        'background-size': '45%',
-        'background-repeat': 'no-repeat',
-        display: 'flex',
-        'justify-content': 'flex-end',
-        'align-items': 'flex-end',
-        'margin-right': '5%',
-      })
-    
-  
-    css(about_colab[i],{
-      width: '80%',
-    height: '131px',
-    })
+    });
+    css(collaborators[i], {
+      'max-width': '130px',
+      height: '130px',
+      'min-width': '130px',
+      'background-image': 'url(../img/chess.png)',
+      'background-size': '45%',
+      'background-repeat': 'no-repeat',
+      display: 'flex',
+      'justify-content': 'flex-end',
+      'align-items': 'flex-end',
+      'margin-right': '5%',
+    });
 
-    css(name_colab[i],{
+    css(aboutcolab[i], {
+      width: '80%',
+      height: '131px',
+    });
+
+    css(namecolab[i], {
       'font-size': '1.3em',
       'font-weight': '700',
       color: '#272a31',
-      'font-family':  'Lato , sans-serif',
-    })
-    
-    
-    css(descr_col[i],{
+      'font-family': 'Lato , sans-serif',
+    });
+
+    css(descrcol[i], {
       'font-size': '1em',
       color: '#ec5242',
-      'font-family':  'Lato , sans-serif',
+      'font-family': 'Lato , sans-serif',
       margin: '0',
-    })
+    });
 
-    
-    css(lineContent[i],{
-    height : '3%',
-    })
+    css(lineContent[i], {
+      height: '3%',
+    });
 
-
-    css(lineC[i],{
+    css(lineC[i], {
       stroke: '#d3d3d3',
       'stroke-width': '7px',
-    })
+    });
 
-    css(briefC[i],{
+    css(briefC[i], {
       'font-size': '1em',
       color: '#555555',
-      'font-family':  'Lato ,sans-serif',
+      'font-family': 'Lato ,sans-serif',
       margin: '0',
-    })
+    });
 
-    setAttributes(user[i],{
+    setAttributes(user[i], {
       src: people[i],
-    })
+    });
   }
 
+  const colabB = document.querySelector('.colab_button');
+  css(colabB, {
+    cursor: 'pointer',
+    width: '100%',
+    border: '2px solid #d3d3d3',
+    'background-color': ' white',
+    'margin-top': '8%',
+    height: '56px',
+  });
 
-    let colabB = document.querySelector('.colab_button');
-    css(colabB,{
-      cursor: 'pointer',
-      width: '100%',
-      border: '2px solid #d3d3d3',
-      'background-color':' white',
-      'margin-top': '8%',
-      height: '56px',
-    })
+  const arrow = document.querySelector('.arrow_bu');
+  css(arrow, {
+    width: '2.5%',
+    'margin-left': '1%',
+  });
+  const ulUser = document.querySelector('.ul_users');
+  css(ulUser, {
+    'list-style': 'none',
+    padding: '0',
+    width: '100%',
+    'margin-top': '5%',
+    height: '985px',
+  });
 
-    let arrow = document.querySelector('.arrow_bu');
-    css(arrow,{
-      width: '2.5%',
-      'margin-left': '1%',
-    })
-    let ulUser = document.querySelector('.ul_users');
-    css(ulUser,{
-      'list-style': 'none',
-      padding: '0',
-      width: '100%',
-      'margin-top': '5%',
-      height: '985px',
-    })
-    
-    //start observing for resize
-    resize_ob.observe(document.body);
-
-  }
-
-  let landingP  = document.querySelector('.container_lanpage');
-  let menu = document.querySelector('.navT');
-  const mobilVE = [];
-  
-  document.querySelector('.menu_mobil').addEventListener('click',()=>{
-  
-  
-            while (landingP.hasChildNodes()) {
-              mobilVE.push(landingP.firstChild);
-              landingP.removeChild(landingP.firstChild);
-            }
-       document.body.removeChild(landingP);
-        menu.style.display = 'block';
-     
-document.querySelector('.section_colab').remove();
-
-
-      });
-  
-          document.querySelector('.closeB').addEventListener('click',()=>{
-            menu.style.display = 'none';
-            
-            
-            for (let i = 0; i <= mobilVE.length - 1; i += 1) {
-              landingP.appendChild(mobilVE[i]);
-            }
-            
-            document.body.appendChild(landingP)
-            elements();
-
-            
-
-          })
-
-
-/* end mob version */
-
-/*responsive page */
-             const resize_ob = new ResizeObserver(function(entries) {
-          //   // since we are observing only a single element, so we access the first element in entries array
-             let rect = entries[0].contentRect;
-          
-          //   // current width & height
-             let width = rect.width;
-             let height = rect.height;
-let clp = document.querySelector('.container_lanpage');
-let gcs = window.getComputedStyle(clp);
-let clpD = document.querySelector('.container_lanpageD');
-let gcsD = window.getComputedStyle(clpD);
-
-if(gcs.display === 'none'){
-  if(rect.width >= 768 ){
-    document.querySelector('.section_colab').style.display = 'none';
-  }
+  // start observing for resize
+  resizeob.observe(document.body);
 }
+window.addEventListener('load', elements);
+const landingP = document.querySelector('.container_lanpage');
+const menu = document.querySelector('.navT');
+const mobilVE = [];
 
-if(gcsD.display === 'none'){
-  if(rect.width <= 768 ){
-    document.querySelector('.section_colab').style.display = 'flex';
+document.querySelector('.menu_mobil').addEventListener('click', () => {
+  while (landingP.hasChildNodes()) {
+    mobilVE.push(landingP.firstChild);
+    landingP.removeChild(landingP.firstChild);
   }
-  
-}
+  document.body.removeChild(landingP);
+  menu.style.display = 'block';
 
+  document.querySelector('.section_colab').remove();
+});
 
-             console.log('Current Width : ' + width);
-             console.log('Current Height : ' + height);
- });
-          
+document.querySelector('.closeB').addEventListener('click', () => {
+  menu.style.display = 'none';
+
+  for (let i = 0; i <= mobilVE.length - 1; i += 1) {
+    landingP.appendChild(mobilVE[i]);
+  }
+
+  document.body.appendChild(landingP);
+  elements();
+});
+
 /* end responsive page */
 
-/*start dek features */
+/* start dek features */
 
-
-// functions styles and properties
-
-function setAttributes(element, attributes) {
-  Object.keys(attributes).forEach((attr) => {
-    element.setAttribute(attr, attributes[attr]);
-  });
-}
-
-function css(variable, style) {
-  Object.keys(style).forEach((attr) => {
-    variable.style[attr] = style[attr];
-  });
-}
-
-// buttons hover and mouseout
-function bottonEventOutA(event) {
-  event.addEventListener('mouseout', () => {
-    event.style.backgroundColor = '#36B37F';
-
-    event.style.cursor = 'pointer';
-  });
-}
-
-function bottonEventA(event) {
-  event.addEventListener('mouseover', () => {
-    event.style.backgroundColor = 'green';
-
-    event.style.cursor = 'pointer';
-  });
-}
-
-function bottonEventOut(event) {
-  event.addEventListener('mouseout', () => {
-    event.style.backgroundColor = 'rgb(238, 248, 243)';
-
-    event.style.cursor = 'pointer';
-  });
-}
-function bottonEvent(event) {
-  event.addEventListener('mouseover', () => {
-    event.style.backgroundColor = '#ebeff4';
-
-    event.style.cursor = 'pointer';
-  });
-}
-
-
-function elementsD (){
-
-
+function elementsD() {
   const section = document.createElement('section');
-      section.className = 'container-sm section_colabD';
-      css(section, {
-        display: 'flex',
-        'flex-direction': 'column',
-        'align-items': 'center',
-        'justify-content': 'center',
-        'margin-top': '7%',
-        });
-        
+  section.className = 'container-sm section_colabD';
+  css(section, {
+    display: 'flex',
+    'flex-direction': 'column',
+    'align-items': 'center',
+    'justify-content': 'center',
+    'margin-top': '7%',
+  });
 
-section.innerHTML = `
+  section.innerHTML = `
 <h2>Featured Speackers</h2>
 <svg class="line_content_colabD" >
   <line class="line_colabD" x1="0" y1="0" x2="30" y2="0"  />
@@ -409,53 +284,45 @@ section.innerHTML = `
   <li class="col_userD">  </li>
   </ul>`;
 
-  let containerM = document.querySelector('.container_mainD')
-  containerM.insertAdjacentElement("afterend",section);
+  const containerM = document.querySelector('.container_mainD');
+  containerM.insertAdjacentElement('afterend', section);
 
-  let lineCC = document.querySelector('.line_content_colabD');
-  css(lineCC,{
+  const lineCC = document.querySelector('.line_content_colabD');
+  css(lineCC, {
     height: '8px',
-      display: 'flex',
-      width: '5%',
-  })
+    display: 'flex',
+    width: '5%',
+  });
 
-  let lineCCL = document.querySelector('.line_colabD');
-  css(lineCCL,{
+  const lineCCL = document.querySelector('.line_colabD');
+  css(lineCCL, {
     stroke: '#ff4f38',
     'stroke-width': '7px',
-  })
+  });
 
+  const liU = document.getElementsByClassName('col_userD');
+  const collaborators = document.getElementsByClassName('collaboratorsD');
+  const aboutcolab = document.getElementsByClassName('about_colD');
+  const namecolab = document.getElementsByClassName('col_nameD');
+  const descrcol = document.getElementsByClassName('desc_colD');
+  const lineContent = document.getElementsByClassName('line_contentD');
+  const lineC = document.getElementsByClassName('lineD');
+  const briefC = document.getElementsByClassName('brief_colD');
 
-    
+  const user = document.getElementsByClassName('userD');
+  const people = ['../img/face1.jpg', '../img/face2.jpg', '../img/face3.jpg', '../img/face4.jpg', '../img/face5.jpg'];
 
-  let liU = document.getElementsByClassName('col_userD');
-  let collaborators = document.getElementsByClassName('collaboratorsD');
-  let about_colab = document.getElementsByClassName ('about_colD');
-  let name_colab = document.getElementsByClassName ('col_nameD');
-  let descr_col = document.getElementsByClassName ('desc_colD');  
-  let lineContent = document.getElementsByClassName ('line_contentD');
-  let lineC = document.getElementsByClassName ('lineD');
-  let briefC = document.getElementsByClassName ('brief_colD');
-  
+  for (let i = 0; i < liU.length - 1; i += 1) {
+    css(liU[i], {
 
-
-  let user = document.getElementsByClassName('userD');
-  let people = ['../img/face1.jpg','../img/face2.jpg','../img/face3.jpg','../img/face4.jpg','../img/face5.jpg'];
-  
-
-  for(let i = 0;i < liU.length -1;i+=1){
-    
-  
-    css(liU[i],{
-      
       display: 'flex',
-    'justify-content': 'center',
-    'margin-top': '39px',
-    
-    width:'44%',
-    'margin-left': '6%',
-    })
-    css(collaborators[i],{
+      'justify-content': 'center',
+      'margin-top': '39px',
+
+      width: '44%',
+      'margin-left': '6%',
+    });
+    css(collaborators[i], {
       'max-width': '130px',
       height: '130px',
       'min-width': '130px',
@@ -466,138 +333,112 @@ section.innerHTML = `
       'justify-content': 'flex-end',
       'align-items': 'flex-end',
       'margin-right': '5%',
-    })
-  
+    });
 
-  css(about_colab[i],{
-    width: '80%',
-  height: '131px',
-  })
+    css(aboutcolab[i], {
+      width: '80%',
+      height: '131px',
+    });
 
-  css(name_colab[i],{
-    'font-size': '1.3em',
-    'font-weight': '700',
-    color: '#272a31',
-    'font-family':  'Lato , sans-serif',
-  })
-  
-  
-  css(descr_col[i],{
-    'font-size': '1em',
-    color: '#ec5242',
-    'font-family':  'Lato , sans-serif',
-    margin: '0',
-  })
+    css(namecolab[i], {
+      'font-size': '1.3em',
+      'font-weight': '700',
+      color: '#272a31',
+      'font-family': 'Lato , sans-serif',
+    });
 
-  
-  css(lineContent[i],{
-  height : '3%',
-  })
+    css(descrcol[i], {
+      'font-size': '1em',
+      color: '#ec5242',
+      'font-family': 'Lato , sans-serif',
+      margin: '0',
+    });
 
+    css(lineContent[i], {
+      height: '3%',
+    });
 
-  css(lineC[i],{
-    stroke: '#d3d3d3',
-    'stroke-width': '7px',
-  })
+    css(lineC[i], {
+      stroke: '#d3d3d3',
+      'stroke-width': '7px',
+    });
 
-  css(briefC[i],{
-    'font-size': '1em',
-    color: '#555555',
-    'font-family':  'Lato ,sans-serif',
-    margin: '0',
-  })
+    css(briefC[i], {
+      'font-size': '1em',
+      color: '#555555',
+      'font-family': 'Lato ,sans-serif',
+      margin: '0',
+    });
 
-  setAttributes(user[i],{
-    src: people[i],
-  })
-}
+    setAttributes(user[i], {
+      src: people[i],
+    });
+  }
 
-
-
-  let ulUser = document.querySelector('.ul_usersD');
-  css(ulUser,{
+  const ulUser = document.querySelector('.ul_usersD');
+  css(ulUser, {
     'list-style': 'none',
     padding: '0',
     width: '100%',
-    'margin-top': '5%',   
+    'margin-top': '5%',
     height: '750px',
     display: 'flex',
     'justify-content': 'space-between',
     'align-items': 'center',
     'flex-wrap': 'wrap',
-  })
+  });
 }
 
-let partners  = document.querySelector('.partnersD');
-let con = document.querySelector('.section_colabD');
+window.addEventListener('load', () => {
+  elementsD();
 
+  const logo = document.querySelector('.logo_mobD');
+  logo.addEventListener('mouseover', () => {
+    css(logo, {
+      transform: 'scale(1.2)',
+      'box-shadow': '0px 0px 0px 0px #ff4f38',
+    });
+  });
 
+  logo.addEventListener('mouseout', () => {
+    css(logo, {
+      transform: 'scale(1)',
+      'box-shadow': '-11px 5px 0px -2px #ff4f38',
+    });
+  });
+});
 
-window.addEventListener('load',()=>{
-elementsD()
+const socialM = document.getElementsByClassName('headWordD');
 
-let logo = document.querySelector('.logo_mobD');
-logo.addEventListener('mouseover',()=>{
-  css(logo,{
-    transform: 'scale(1.2)',
-    'box-shadow':'0px 0px 0px 0px #ff4f38',
-  })
-})
+for (let i = 0; i < socialM.length; i += 1) {
+  socialM[i].addEventListener('mouseover', () => {
+    css(socialM[i], {
+      transform: 'scale(1.2)',
+      cursor: 'pointer',
+    });
+  });
+  socialM[i].addEventListener('mouseout', () => {
+    css(socialM[i], {
+      transform: 'scale(1)',
 
-logo.addEventListener('mouseout',()=>{
-  css(logo,{
-    transform: 'scale(1)',
-    'box-shadow':'-11px 5px 0px -2px #ff4f38',
-  })
-})
+    });
+  });
+}
 
+const live = document.querySelector('.invitationD');
 
-//con.after()
-})
-/*end desk features */
-
-/*event social media icons */
-let socialM = document.getElementsByClassName('headWordD');
-console.log(socialM)
-
- for(let i = 0;i < socialM.length;i+=1){
-
-socialM[i].addEventListener('mouseover',()=>{
-
-  css(socialM[i],{
-  transform: 'scale(1.2)',
-  cursor: 'pointer',
-})
-})
-socialM[i].addEventListener('mouseout',()=>{
-
-  css(socialM[i],{
-  transform: 'scale(1)',
-
-})
-})
- }
-
- let live = document.querySelector('.invitationD') ;
-
- live.addEventListener('mouseover',()=>{
-  
-  css(live,{
+live.addEventListener('mouseover', () => {
+  css(live, {
     'box-shadow': '0px 0px 0px 0px #ff4f38',
     transform: 'scale(1.2)',
-  })
-  
-  live.addEventListener('mouseout',()=>{
-  
-    css(live,{
+  });
+
+  live.addEventListener('mouseout', () => {
+    css(live, {
       'box-shadow': '0px 0px 0px 4px #ff4f38',
       transform: 'scale(1)',
-    })
-  
- })
- })
+    });
+  });
+});
 
-
-
-
-/*close events social media icons */
+/* close events social media icons */
