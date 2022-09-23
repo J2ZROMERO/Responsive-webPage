@@ -1,7 +1,7 @@
 {
   "name": "course-web-development",
   "version": "1.0.0",
-  "description": "",
+  "description": "> This project gives you a general quick view of a responsive web page whit html,css and js, the section speakers are created dynamically with javascript when the page load, Js scripts events are present on some html elements.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
