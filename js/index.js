@@ -122,7 +122,7 @@ function elements() {
       'max-width': '130px',
       height: '130px',
       'min-width': '130px',
-      'background-image': 'url(../img/chess.png)',
+      'background-image': 'url(img/chess.png)',
       'background-size': '45%',
       'background-repeat': 'no-repeat',
       display: 'flex',
@@ -313,7 +313,7 @@ function elementsD() {
   const briefC = document.getElementsByClassName('brief_colD');
 
   const user = document.getElementsByClassName('userD');
-  const people = ['../img/face1.jpg', '../img/face2.jpg', '../img/face3.jpg', '../img/face4.jpg', '../img/face5.jpg', '../img/face5.jpg'];
+  const people = ['img/face1.jpg', 'img/face2.jpg', 'img/face3.jpg', 'img/face4.jpg', 'img/face5.jpg', 'img/face5.jpg'];
 
   for (let i = 0; i < liU.length - 1; i += 1) {
     css(liU[i], {
@@ -329,7 +329,7 @@ function elementsD() {
       'max-width': '130px',
       height: '130px',
       'min-width': '130px',
-      'background-image': 'url(../img/chess.png)',
+      'background-image': 'url(img/chess.png)',
       'background-size': '45%',
       'background-repeat': 'no-repeat',
       display: 'flex',
