@@ -42,3 +42,40 @@ socialM[i].addEventListener('mouseout',()=>{
 })
 })
  }
+
+ let live = document.querySelector('.invitationDA') ;
+
+ live.addEventListener('mouseover',()=>{
+  
+  css(live,{
+    'box-shadow': '0px 0px 0px 0px #ff4f38',
+    transform: 'scale(1.2)',
+  })
+  
+  live.addEventListener('mouseout',()=>{
+  
+    css(live,{
+      'box-shadow': '0px 0px 0px 4px #ff4f38',
+      transform: 'scale(1)',
+    })
+  
+ })
+ })
+
+
+ let hovert = document.getElementsByClassName('textHoverDA');
+
+ for(let i = 0; i< hovert.length;i++){
+
+  hovert[i].addEventListener('mouseover',()=>{
+    css(hovert[i],{
+      opacity: '0',
+    })
+     })
+    
+     hovert[i].addEventListener('mouseout',()=>{
+      css(hovert[i],{
+        opacity: '.5',
+      })    
+       })
+ }
