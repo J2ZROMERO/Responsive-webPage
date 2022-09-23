@@ -16,7 +16,21 @@
     background-size: 100%;  
     padding: 0;
     min-width: 540px;
+
+    animation-duration: .2s;
+    animation-name: slidein;
 }
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
 
 body {
 display: flex;
@@ -51,6 +65,10 @@ align-items: center;
     font-family: 'COCOGOOSE', sans-serif;
     text-align: center;
     margin-top: 2%;
+    background-image: url('../img/fondo_text.jpg');
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
 }
  .description {
     width: 470px;

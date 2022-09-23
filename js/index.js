@@ -282,13 +282,13 @@ let clpD = document.querySelector('.container_lanpageD');
 let gcsD = window.getComputedStyle(clpD);
 
 if(gcs.display === 'none'){
-  if(rect.width > 768 ){
+  if(rect.width >= 768 ){
     document.querySelector('.section_colab').style.display = 'none';
   }
 }
 
 if(gcsD.display === 'none'){
-  if(rect.width < 767 ){
+  if(rect.width <= 768 ){
     document.querySelector('.section_colab').style.display = 'flex';
   }
   
@@ -536,6 +536,68 @@ let con = document.querySelector('.section_colabD');
 window.addEventListener('load',()=>{
 elementsD()
 
+let logo = document.querySelector('.logo_mobD');
+logo.addEventListener('mouseover',()=>{
+  css(logo,{
+    transform: 'scale(1.2)',
+    'box-shadow':'0px 0px 0px 0px #ff4f38',
+  })
+})
+
+logo.addEventListener('mouseout',()=>{
+  css(logo,{
+    transform: 'scale(1)',
+    'box-shadow':'-11px 5px 0px -2px #ff4f38',
+  })
+})
+
+
 //con.after()
 })
 /*end desk features */
+
+/*event social media icons */
+let socialM = document.getElementsByClassName('headWordD');
+console.log(socialM)
+
+ for(let i = 0;i < socialM.length;i+=1){
+
+socialM[i].addEventListener('mouseover',()=>{
+
+  css(socialM[i],{
+  transform: 'scale(1.2)',
+  cursor: 'pointer',
+})
+})
+socialM[i].addEventListener('mouseout',()=>{
+
+  css(socialM[i],{
+  transform: 'scale(1)',
+
+})
+})
+ }
+
+ let live = document.querySelector('.invitationD') ;
+
+ live.addEventListener('mouseover',()=>{
+  
+  css(live,{
+    'box-shadow': '0px 0px 0px 0px #ff4f38',
+    transform: 'scale(1.2)',
+  })
+  
+  live.addEventListener('mouseout',()=>{
+  
+    css(live,{
+      'box-shadow': '0px 0px 0px 4px #ff4f38',
+      transform: 'scale(1)',
+    })
+  
+ })
+ })
+
+
+
+
+/*close events social media icons */

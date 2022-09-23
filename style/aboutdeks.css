@@ -18,8 +18,23 @@
     align-items: center;
     position: fixed;
     box-shadow: 0px -14px 21px 1px black;
-    
+
+        animation-duration: 1s;
+        animation-name: slidein;
+      
 }
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
 .icons_MediaDA{
     list-style: none;
     padding: 0;
@@ -38,14 +53,14 @@
     justify-content: space-between;
     align-items: flex-start;
     width: 30%;
-    margin-bottom: 1%;
+    
  }    
 
  
  .logo_mobDA{
     width: 155px;
-    box-shadow: 1px -7px 0px -2px #ff4f38;
-    margin-bottom: 5%;
+    box-shadow:-11px 5px 0px -2px #ff4f38;
+    
  }
 
 .navTopDA{
@@ -129,6 +144,10 @@ align-items: center;
     font-family: 'COCOGOOSE', sans-serif;
     text-align: center;
     margin-top: 2%;
+    background-image: url('../img/fondo_text.jpg');
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
 }
  .descriptionDA {
     width: 68%;

@@ -21,8 +21,21 @@
     background-size: 100%;  
     padding: 0;
     min-width: 540px;
+    animation-duration: .2s;
+    animation-name: slidein;
 }
 
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
 body {
 display: flex;
 flex-direction: column;
@@ -53,6 +66,10 @@ align-items: center;
     color:rgba(229,33,11,0.8) ;
 width: 470px;   
 font-family: 'COCOGOOSE', sans-serif;
+background-image: url('../img/fondo_text.jpg');
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
 }
  .description {
     width: 470px;
@@ -262,8 +279,21 @@ margin-top: 5%;
     align-items: center;
     position: fixed;
     box-shadow: 0px -14px 21px 1px black;
-    
+    animation-duration: 1s;
+    animation-name: slidein;
 }
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
 .icons_MediaD{
     list-style: none;
     padding: 0;
@@ -364,6 +394,10 @@ align-items: center;
     color:rgba(229,33,11,0.8) ;
 width: 470px;   
 font-family: 'COCOGOOSE', sans-serif;
+background-image: url('../img/fondo_text.jpg');
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
 }
  .descriptionD {
     width: 470px;
@@ -520,7 +554,7 @@ font-size: 1em;
     justify-content: space-between;
     align-items: flex-start;
     width: 30%;
-    margin-bottom: 1%;
+    
  }
  .closeBD {
     width: 10%;
@@ -535,8 +569,8 @@ font-size: 1em;
 
  .logo_mobD{
     width: 155px;
-    box-shadow: 1px -7px 0px -2px #ff4f38;
-    margin-bottom: 5%;
+    box-shadow:-11px 5px 0px -2px #ff4f38;
+    
  }
 
  
@@ -613,8 +647,10 @@ font-size: 1em;
     width: 79%;
 }
 
-.section_colab{
-
+.assotiation_bottomD{
+    width: 53%;
+    font-size: 1em;
+    font-family:  'Lato', sans-serif;;
 }
 
     
