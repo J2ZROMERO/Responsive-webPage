@@ -225,6 +225,10 @@ section.innerHTML = `
       'margin-top': '5%',
       height: '985px',
     })
+    
+    //start observing for resize
+    resize_ob.observe(document.body);
+
   }
 
   let landingP  = document.querySelector('.container_lanpage');
@@ -260,3 +264,39 @@ document.querySelector('.section_colab').remove();
             
 
           })
+
+
+/* end mob version */
+
+/*responsive page */
+             const resize_ob = new ResizeObserver(function(entries) {
+          //   // since we are observing only a single element, so we access the first element in entries array
+             let rect = entries[0].contentRect;
+          
+          //   // current width & height
+             let width = rect.width;
+             let height = rect.height;
+let clp = document.querySelector('.container_lanpage');
+let gcs = window.getComputedStyle(clp);
+let clpD = document.querySelector('.container_lanpageD');
+let gcsD = window.getComputedStyle(clpD);
+
+if(gcs.display === 'none'){
+  if(rect.width > 768 ){
+    document.querySelector('.section_colab').style.display = 'none';
+  }
+}
+
+if(gcsD.display === 'none'){
+  if(rect.width < 767 ){
+    document.querySelector('.section_colab').style.display = 'flex';
+  }
+  
+}
+
+
+             console.log('Current Width : ' + width);
+             console.log('Current Height : ' + height);
+ });
+          
+/* end responsive page */
