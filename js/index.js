@@ -64,7 +64,7 @@ function elements() {
         </li>
     <li class="col_user">
         <div class="collaborators">
-            <img src="img/face2.jpg " alt="" class="user">
+            <img  alt="" class="user">
         </div> 
         <div class="about_col">
             <h2 class="col_name">Sopfia Robinson</h2>
@@ -73,13 +73,13 @@ function elements() {
                 <line class="line" x1="0" y1="0" x2="30" y2="0"  />
               </svg>
             <p class="brief_col">Professional on backend at google.</p> </div></li>
-    <li class="col_user"><div class="collaborators"><img src="img/face3.jpg " alt="" class="user"></div> <div class="about_col"><h2 class="col_name">Albert Cons</h2><h3 class="desc_col">UX desing at Google</h3><svg class="line_content" >
+    <li class="col_user"><div class="collaborators"><img  alt="" class="user"></div> <div class="about_col"><h2 class="col_name">Albert Cons</h2><h3 class="desc_col">UX desing at Google</h3><svg class="line_content" >
         <line class="line" x1="0" y1="0" x2="30" y2="0"  />
       </svg><p class="brief_col">Expert creating UX design for user, 3 times named: The best UX designer at Google</p> </div></li>
-    <li class="col_user"><div class="collaborators"><img src="img/face4.jpg" alt="" class="user"></div> <div class="about_col"><h2 class="col_name">Neymar Royar</h2><h3 class="desc_col">Computer System Enginer </h3><svg class="line_content" >
+    <li class="col_user"><div class="collaborators"><img  alt="" class="user"></div> <div class="about_col"><h2 class="col_name">Neymar Royar</h2><h3 class="desc_col">Computer System Enginer </h3><svg class="line_content" >
         <line class="line" x1="0" y1="0" x2="30" y2="0"  />
       </svg><p class="brief_col">Full stack programmer</p> </div></li>
-    <li class="col_user"><div class="collaborators"><img src="img/face5.jpg" alt="" class="user"></div> <div class="about_col"><h2 class="col_name">Luci Caprilla</h2><h3 class="desc_col">Especialist on Digital Marketing</h3><svg class="line_content" >
+    <li class="col_user"><div class="collaborators"><img  alt="" class="user"></div> <div class="about_col"><h2 class="col_name">Luci Caprilla</h2><h3 class="desc_col">Especialist on Digital Marketing</h3><svg class="line_content" >
         <line class="line" x1="0" y1="0" x2="30" y2="0"  />
       </svg><p class="brief_col">Professional to catch new potential clients</p> </div></li>
     <li class="col_user"><button class="colab_button"> <span>More</span> <img class="arrow_bu" src="img/arrow.png" alt=""></button></li>
@@ -262,7 +262,7 @@ function elementsD() {
       </li>
   <li class="col_userD">
       <div class="collaboratorsD">
-          <img src="img/face2.jpg " alt="" class="userD">
+          <img src= alt="" class="userD">
       </div> 
       <div class="about_colD">
           <h2 class="col_nameD">Sopfia Robinson</h2>
@@ -271,16 +271,16 @@ function elementsD() {
               <line class="lineD" x1="0" y1="0" x2="40" y2="0"  />
             </svg>
           <p class="brief_colD">Professional on backend at google.</p> </div></li>
-  <li class="col_userD"><div class="collaboratorsD"><img src="img/face3.jpg " alt="" class="userD"></div> <div class="about_colD"><h2 class="col_nameD">Albert Cons</h2><h3 class="desc_colD">UX desing at Google</h3><svg class="line_contentD" >
+  <li class="col_userD"><div class="collaboratorsD"><img  alt="" class="userD"></div> <div class="about_colD"><h2 class="col_nameD">Albert Cons</h2><h3 class="desc_colD">UX desing at Google</h3><svg class="line_contentD" >
       <line class="lineD" x1="0" y1="0" x2="30" y2="0"  />
     </svg><p class="brief_colD">Expert creating UX design for user, 3 times named: The best UX designer at Google</p> </div></li>
-  <li class="col_userD"><div class="collaboratorsD"><img src="img/face4.jpg" alt="" class="userD"></div> <div class="about_colD"><h2 class="col_nameD">Neymar Royar</h2><h3 class="desc_colD">Computer System Enginer </h3><svg class="line_contentD" >
+  <li class="col_userD"><div class="collaboratorsD"><img  alt="" class="userD"></div> <div class="about_colD"><h2 class="col_nameD">Neymar Royar</h2><h3 class="desc_colD">Computer System Enginer </h3><svg class="line_contentD" >
       <line class="lineD" x1="0" y1="0" x2="30" y2="0"  />
     </svg><p class="brief_colD">Full stack programmer</p> </div></li>
-  <li class="col_userD"><div class="collaboratorsD"><img src="img/face5.jpg" alt="" class="userD"></div> <div class="about_colD"><h2 class="col_nameD">Luci Caprilla</h2><h3 class="desc_colD">Especialist on Digital Marketing</h3><svg class="line_contentD" >
+  <li class="col_userD"><div class="collaboratorsD"><img  alt="" class="userD"></div> <div class="about_colD"><h2 class="col_nameD">Luci Caprilla</h2><h3 class="desc_colD">Especialist on Digital Marketing</h3><svg class="line_contentD" >
       <line class="lineD" x1="0" y1="0" x2="30" y2="0"  />
     </svg><p class="brief_colD">Professional to catch new potential clients</p> </div>
-    </li><li class="col_userD"><div class="collaboratorsD"><img src="img/face4.jpg" alt="" class="userD"></div> <div class="about_colD"><h2 class="col_nameD">Luci Caprilla</h2><h3 class="desc_colD">Especialist on Digital Marketing</h3><svg class="line_contentD" >
+    </li><li class="col_userD"><div class="collaboratorsD"><img  alt="" class="userD"></div> <div class="about_colD"><h2 class="col_nameD">Luci Caprilla</h2><h3 class="desc_colD">Especialist on Digital Marketing</h3><svg class="line_contentD" >
     <line class="lineD" x1="0" y1="0" x2="30" y2="0"  />
   </svg><p class="brief_colD">Professional to catch new potential clients</p> </div>
   </li>
