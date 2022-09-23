@@ -110,7 +110,7 @@ function elements() {
   const briefC = document.getElementsByClassName('brief_col');
 
   const user = document.getElementsByClassName('user');
-  const people = ['../img/face1.jpg', '../img/face2.jpg', '../img/face3.jpg', '../img/face4.jpg', '../img/face5.jpg'];
+  const people = ['img/face1.jpg', 'img/face2.jpg', 'img/face3.jpg', 'img/face4.jpg', 'img/face5.jpg'];
 
   for (let i = 0; i < liU.length - 1; i += 1) {
     css(liU[i], {

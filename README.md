@@ -39,12 +39,10 @@
 
 
 
-### [Live demo ](https://j2zromero.github.io/Personal_Portafolio_Web_Site/)
+### [Live demo ]( https://j2zromero.github.io/course-web-development/)
 
 
-## Authors
-
-👤 **Author1**
+👤 **Author**
 
 - GitHub: [githubhandle](@https://github.com/J2ZROMERO)
 - Twitter: [@twitterhandle](https://twitter.com/JOSEZEPED4)
