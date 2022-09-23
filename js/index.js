@@ -19,6 +19,7 @@ const resizeob = new ResizeObserver((entries) => {
     }
   }
 });
+
 function setAttributes(element, attributes) {
   Object.keys(attributes).forEach((attr) => {
     element.setAttribute(attr, attributes[attr]);
