@@ -83,7 +83,7 @@ function elements() {
     <li class="col_user"><div class="collaborators"><img  alt="" class="user"></div> <div class="about_col"><h2 class="col_name">Luci Caprilla</h2><h3 class="desc_col">Especialist on Digital Marketing</h3><svg class="line_content" >
         <line class="line" x1="0" y1="0" x2="30" y2="0"  />
       </svg><p class="brief_col">Professional to catch new potential clients</p> </div></li>
-    <li class="col_user"><button class="colab_button"> <span>More</span> <img class="arrow_bu" src="img/arrow.png" alt=""></button></li>
+    <li class="col_user"><button class="colab_button"> <span class="more_less">More</span> <img class="arrow_bu" src="img/arrow.png" alt=""></button></li>
     </ul>`;
 
   document.body.appendChild(section);
@@ -119,6 +119,7 @@ function elements() {
       'justify-content': 'center',
       'margin-top': '39px',
     });
+
     css(collaborators[i], {
       'max-width': '130px',
       height: '130px',
@@ -194,6 +195,78 @@ function elements() {
     width: '100%',
     'margin-top': '5%',
     height: '985px',
+  });
+
+  let count = 0;
+  const ulsectionML = document.querySelector('.ul_users');
+
+  /* */
+  for (let j = 4; j >= 0; j -= 1) {
+    if (j >= 2) {
+      css(liU[j], {
+        display: 'none',
+
+      });
+    }
+    css(ulUser, {
+      height: '500px',
+    });
+  }
+  /** */
+  document.querySelector('.colab_button').addEventListener('click', () => {
+    count += 1;
+    const mltext = document.querySelector('.more_less');
+    mltext.innerHTML = 'More';
+    css(mltext, {
+      'font-weigth': '400',
+      'font-size': '16px',
+
+    });
+
+    if (count === 2) {
+      for (let i = liU.length - 2; i >= 0; i -= 1) {
+        if (i >= 2) {
+          css(liU[i], {
+            display: 'none',
+
+          });
+        }
+      }
+      css(ulsectionML, {
+        height: '500px',
+      });
+      const arrowinvert = document.querySelector('.arrow_bu');
+
+      css(arrowinvert, {
+        transform: 'rotate(0deg)',
+      });
+      count = 0;
+    }
+
+    if (count === 1) {
+      for (let j = 0; j < liU.length; j += 1) {
+        css(liU[j], {
+
+          display: 'flex',
+
+        });
+      }
+      css(ulsectionML, {
+        height: '985px',
+      });
+      const arrowinvert = document.querySelector('.arrow_bu');
+
+      css(arrowinvert, {
+        transform: 'rotate(180deg)',
+      });
+
+      mltext.innerHTML = 'Less';
+      css(mltext, {
+        'font-weigth': '400',
+        'font-size': '16px',
+
+      });
+    }
   });
 
   // start observing for resize
